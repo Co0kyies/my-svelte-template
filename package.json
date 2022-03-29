@@ -6,9 +6,9 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "sass-build-bulma": "node-sass bulma/bulma.sass bulma/css/bulma.css --source-map bulma/css/bulma.css.map",
-    "sass-watch-bulma": "npm run sass-build-bulma -- --watch",
-    "sass-start-bulma": "npm run sass-watch-bulma"
+    "sass-build": "node-sass public/style.scss public/style.css",
+    "sass-watch": "npm run sass-build -- --watch",
+    "sass-start": "npm run sass-watch"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
