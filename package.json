@@ -6,7 +6,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "sass-build": "node-sass public/style.scss public/style.css",
+    "sass-build": "node-sass node_modules/bulma/bulma.sass public/style.css",
     "sass-watch": "npm run sass-build -- --watch",
     "sass-start": "npm run sass-watch"
   },
